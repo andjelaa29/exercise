@@ -2,16 +2,3 @@
     display: flex;
     height: 100vh;
 }
-
-.sidebar {
-    width: 250px;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
-
-.main-content {
-    flex-grow: 1;   /* rest of the space */
-    background-color: #f4f4f4;
-    padding: 20px;
-}
