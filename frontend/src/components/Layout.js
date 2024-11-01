@@ -9,9 +9,10 @@ const Layout = () => {
     const [selectedUser, setSelectedUser] = useState(null);
 
     useEffect(() => {
-        axios.get('https://dummyjson.com/users?limit=20')
+    //  axios.get('https://dummyjson.com/users?limit=20')
+        axios.get('http://127.0.0.1:8000/users')
             .then(response => {
-                setUsers(response.data.users);
+                setUsers(response.data);
             })
             .catch(err => {
                 console.error("Error fetching users: ", err);

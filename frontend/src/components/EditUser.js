@@ -10,7 +10,8 @@ const EditUser = ({selectedUser, setIsEditing, onUpdate}) => {
     };
 
     const handleSaveClick = () => {
-        axios.put(`https://dummyjson.com/users/${userData.id}`, userData)
+    //  axios.put(`https://dummyjson.com/users/${userData.id}`, userData)
+        axios.put(`http://127.0.0.1:8000/users/${userData.id}`, userData)
             .then(response => {
                 onUpdate(response.data);
             })
